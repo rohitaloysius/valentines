@@ -127,8 +127,8 @@ const message = document.getElementById("message");
 /* Make NO button run away */
 noBtn.addEventListener("mouseover", function() {
     const container = document.querySelector(".container");
-    const maxX = container.offsetWidth - noBtn.offsetWidth;
-    const maxY = 100;
+    const maxX = container.offsetWidth - noBtn.offsetWidth - 20;
+    const maxY = container.offsetHeight - noBtn.offsetHeight - 20;
 
     const randomX = Math.random() * maxX;
     const randomY = Math.random() * maxY;
@@ -189,3 +189,4 @@ setInterval(createHeart, 300);
 
 </body>
 </html>
+
